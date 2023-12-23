@@ -8,17 +8,17 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-        color: Colors.amberAccent,
-        child: Container(
-            child: Center(
-                child: Text(
-          "Hello Dart",
-          style: TextStyle(
-            fontSize: 50,
-            color: Colors.blue,
-            fontWeight: FontWeight.bold,
-          ),
-        ))),
-      );
+      color: const Color.fromARGB(255, 72, 70, 63),
+      child: Container(
+          child: Center(
+              child: Text(
+        "Hello Daart",
+        style: TextStyle(
+          fontSize: 50,
+          color: Colors.blue,
+          fontWeight: FontWeight.bold,
+        ),
+      ))),
+    );
   }
 }
