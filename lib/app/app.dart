@@ -8,7 +8,8 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
+      // debugShowCheckedModeBanner: false,
       title: "Flutter Learn",
       home: HomeView(),
     );
