@@ -1,6 +1,4 @@
-// import 'dart:ui';
 import 'package:flutter/material.dart';
-// import 'package:flutter/widgets.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -10,7 +8,7 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         width: double.infinity,
-                decoration: const BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.bottomCenter,
             end: Alignment.topCenter,
@@ -19,29 +17,26 @@ class SplashScreen extends StatelessWidget {
               Color.fromRGBO(255, 255, 255, 1),
             ],
           ),
-         
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            const SizedBox(
-              height: 30,
-            ),
+            const SizedBox(),
+            // -----------------------------------------------------------------------
             Image.asset(
               'assets/1.png',
-             
             ),
-            const SizedBox(
-                
-                ),
+            // --------------------------
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/login');
+              },
               style: TextButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 122, 80, 191),
                   shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(8))),
                   padding: const EdgeInsets.only(
-                      left: 70, top: 10, bottom: 10, right: 70)),
+                      left: 100, top: 15, bottom: 15, right: 100)),
               child: const Text(
                 'Get Started',
                 style: TextStyle(
