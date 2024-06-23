@@ -23,37 +23,37 @@ class _ForgotpasswordState extends State<Forgotpassword> {
             height: MediaQuery.of(context).size.height,
             decoration: const BoxDecoration(
               gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
+                begin: Alignment.bottomCenter,
+                end: Alignment.topCenter,
                 colors: [
-                  Colors.white,
-                  Color.fromRGBO(166, 112, 225, .02),
+                  Color.fromARGB(255, 236, 218, 247),
+                  Color.fromRGBO(255, 255, 255, 1),
                 ],
               ),
             ),
             child: SingleChildScrollView(
               child: Column(children: [
-                Container(
-                  margin: const EdgeInsetsDirectional.only(top: 30),
-                  child: Text(
-                    'Oops you forgot your password !!',
-                    style: TextStyle(
-                      color: const Color.fromRGBO(124, 57, 208, 1),
-                      fontSize: MediaQuery.of(context).size.width / 21,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ),
-                Container(
-                  margin: const EdgeInsetsDirectional.only(top: 20),
-                  child: Text(
-                    'Don’t worry ',
-                    style: TextStyle(
-                        color: const Color.fromRGBO(124, 57, 208, 1),
-                        fontWeight: FontWeight.w800,
-                        fontSize: MediaQuery.of(context).size.width / 21),
-                  ),
-                ),
+                // Container(
+                //   margin: const EdgeInsetsDirectional.only(top: 30),
+                //   child: Text(
+                //     'Oops you forgot your password !!',
+                //     style: TextStyle(
+                //       color: const Color.fromRGBO(124, 57, 208, 1),
+                //       fontSize: MediaQuery.of(context).size.width / 21,
+                //       fontWeight: FontWeight.w500,
+                //     ),
+                //   ),
+                // ),
+                // Container(
+                //   margin: const EdgeInsetsDirectional.only(top: 20),
+                //   child: Text(
+                //     'Don’t worry ',
+                //     style: TextStyle(
+                //         color: const Color.fromRGBO(124, 57, 208, 1),
+                //         fontWeight: FontWeight.w800,
+                //         fontSize: MediaQuery.of(context).size.width / 21),
+                //   ),
+                // ),
                 Visibility(
                     visible: show,
                     child: Column(

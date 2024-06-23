@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notatmrp/screens/forgotpassword.dart';
+import 'package:notatmrp/screens/forgotpassword1.dart';
 // import 'package:notatmrp/screens/login.dart';
 import 'package:notatmrp/screens/login1.dart';
 import 'package:notatmrp/screens/navbar%20pages/home_page.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/splash": (context) => const SplashScreen(),
         "/login": (context) => const Login1(),
-        "/forgotpassword": (context) => const Forgotpassword(),
+        "/forgotpassword": (context) => const Forgotpassword1(),
         "/homepage": (context) => const HomePage(),
       },
     );
