@@ -23,7 +23,18 @@ class _Login1State extends State<Login1> {
           ),
         ),
         body: Container(
-          margin: const EdgeInsets.all(18),
+          padding: const EdgeInsets.all(18),
+          height: MediaQuery.of(context).size.height,
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.bottomCenter,
+              end: Alignment.topCenter,
+              colors: [
+                Color.fromARGB(255, 236, 218, 247),
+                Color.fromRGBO(255, 255, 255, 1),
+              ],
+            ),
+          ),
           child: SingleChildScrollView(
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -71,7 +82,9 @@ class _Login1State extends State<Login1> {
                 Align(
                   alignment: Alignment.centerRight,
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/forgotpassword');
+                    },
                     child: const Text('Forgot Password?'),
                   ),
                 ),

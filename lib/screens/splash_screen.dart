@@ -13,7 +13,7 @@ class SplashScreen extends StatelessWidget {
             begin: Alignment.bottomCenter,
             end: Alignment.topCenter,
             colors: [
-              Color.fromARGB(255, 206, 164, 231),
+              Color.fromARGB(255, 236, 218, 247),
               Color.fromRGBO(255, 255, 255, 1),
             ],
           ),
