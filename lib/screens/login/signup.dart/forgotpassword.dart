@@ -170,7 +170,7 @@ class _otpState extends State<otp> {
                         ),
                         borderRadius: BorderRadius.circular(100)),
                     onPressed: () {
-                      Navigator.pushNamed(context, '/homepage');
+                      Navigator.pushNamed(context, '/location');
                       // setState(() {
                       // show = !show;
                       // if (name == "SEND CODE") {
