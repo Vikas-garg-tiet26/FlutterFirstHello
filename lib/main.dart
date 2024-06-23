@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/splash": (context) => const SplashScreen(),
         "/login": (context) => const Login(),
-        "/forgotpassword": (context) => const Forgotpassword(),
+        "/otp": (context) => const otp(),
         "/homepage": (context) => const HomePage(),
       },
     );

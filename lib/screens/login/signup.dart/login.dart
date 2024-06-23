@@ -214,14 +214,9 @@ class _LoginState extends State<Login> {
                                 ),
                                 borderRadius: BorderRadius.circular(100)),
                             onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Customnavbar(),
-                                ),
-                              );
+                              Navigator.pushNamed(context, '/otp');
                             },
-                            backgroundColor: Color.fromARGB(196, 124, 8, 240),
+                            backgroundColor: const Color.fromARGB(196, 124, 8, 240),
                             child: Text(
                               'Send OTP',
                               style: GoogleFonts.inter(
