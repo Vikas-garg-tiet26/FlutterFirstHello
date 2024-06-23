@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:notatmrp/components/costomappbar2.dart';
 import 'package:notatmrp/components/customcard.dart';
+// import 'package:notatmrp/components/customcard.dart';
 
 class SalesData {
   SalesData(this.year, this.sales);
@@ -19,7 +20,15 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar2(),
+      appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 57, 36, 103),
+        flexibleSpace: Image.asset(
+          'assets/logo2.png',
+          scale: 0.01,
+          filterQuality: FilterQuality.high,
+          alignment: Alignment.centerLeft,
+        ),
+      ),
       body: Container(
         margin: const EdgeInsets.only(top: 10),
         decoration: const BoxDecoration(
