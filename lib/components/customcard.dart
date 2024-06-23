@@ -15,10 +15,10 @@ class _CustomCardState extends State<CustomCard> {
       scrollDirection: Axis.vertical,
       child: Column(
         children: [
-          card("11", "IMPRESSIONS", "assets/hand_up.svg"),
-          card("11", "CONVERSION", "assets/positive_dynamic.svg"),
-          card("₹1000", "REVENUE", "assets/euro_money.svg"),
-          card("₹1000", "COMMISSION", "assets/Vector.svg"),
+          card("100+", "IMPRESSIONS", "assets/HandUp.png"),
+          card("99+", "CONVERSION", "assets/PositiveDynamic.png"),
+          card("₹1000", "REVENUE", "assets/EuroMoney.png"),
+          card("₹1000", "COMMISSION", "assets/Vector.png"),
         ],
       ),
     );
@@ -37,7 +37,7 @@ class _CustomCardState extends State<CustomCard> {
         horizontal: MediaQuery.of(context).size.width / 7,
       ),
       decoration: BoxDecoration(
-        color: const Color.fromRGBO(124, 57, 208, 1),
+        color: const Color.fromARGB(183, 207, 178, 225),
         borderRadius: BorderRadius.circular(35),
       ),
       child: Column(
@@ -49,7 +49,10 @@ class _CustomCardState extends State<CustomCard> {
               Container(
                 width: 70,
                 height: 70,
-                child: SvgPicture.asset(imagepath),
+                child: Image.asset(
+                  imagepath,
+                  color: Colors.amber,
+                ),
               ),
               const SizedBox(width: 23),
               Column(
@@ -58,7 +61,7 @@ class _CustomCardState extends State<CustomCard> {
                   Text(
                     value,
                     style: TextStyle(
-                      color: const Color.fromRGBO(244, 213, 102, 1),
+                      color: const Color.fromARGB(255, 106, 17, 153),
                       fontFamily: "Inter",
                       fontSize: MediaQuery.of(context).size.width / 20,
                       fontWeight: FontWeight.w400,
@@ -67,7 +70,7 @@ class _CustomCardState extends State<CustomCard> {
                   Text(
                     name,
                     style: TextStyle(
-                      color: Colors.white,
+                      color: const Color.fromARGB(255, 140, 77, 207),
                       fontFamily: "Inter",
                       fontSize: MediaQuery.of(context).size.width / 25,
                       fontWeight: FontWeight.w500,

@@ -24,11 +24,11 @@ class _HomePageState extends State<HomePage> {
         margin: const EdgeInsets.only(top: 10),
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
+            begin: Alignment.bottomCenter,
+            end: Alignment.topCenter,
             colors: [
-              Colors.white,
-              Color.fromRGBO(166, 112, 225, .02),
+              Color.fromARGB(255, 236, 218, 247),
+              Color.fromRGBO(255, 255, 255, 1),
             ],
           ),
         ),

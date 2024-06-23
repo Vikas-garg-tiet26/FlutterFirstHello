@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:notatmrp/screens/forgotpassword.dart';
-import 'package:notatmrp/screens/forgotpassword1.dart';
+import 'package:notatmrp/screens/login/signup.dart/forgotpassword.dart';
+import 'package:notatmrp/screens/login/signup.dart/forgotpassword1.dart';
 // import 'package:notatmrp/screens/login.dart';
-import 'package:notatmrp/screens/login1.dart';
+import 'package:notatmrp/screens/login/signup.dart/login1.dart';
 import 'package:notatmrp/screens/navbar%20pages/home_page.dart';
-import 'package:notatmrp/screens/splash_screen.dart';
+import 'package:notatmrp/screens/login/signup.dart/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
